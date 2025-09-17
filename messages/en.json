@@ -1,0 +1,346 @@
+{
+  "homepage": {
+    "title": "Professional Online Printing House",
+    "subtitle": "High-quality printing of business cards, flyers, posters and other promotional materials",
+    "hero": {
+      "heading": "Welcome to Drukarnia Graften",
+      "description": "Professional printing services with modern configurators and competitive prices. Order online and receive your materials quickly and reliably.",
+      "cta": "Start Configuring"
+    },
+    "features": {
+      "quality": {
+        "title": "Premium Quality",
+        "description": "We use only the highest quality materials and modern printing technologies"
+      },
+      "speed": {
+        "title": "Fast Delivery",
+        "description": "Express processing and reliable delivery throughout Poland"
+      },
+      "configurator": {
+        "title": "Easy Configuration",
+        "description": "Intuitive online configurators for all types of print materials"
+      }
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "about": {
+    "hero": {
+      "title": "About Drukarnia Graften",
+      "description": "We are a modern printing house dedicated to providing high-quality printing services with innovative technology and exceptional customer service."
+    },
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Founded in 2025, Drukarnia Graften emerged from a vision to revolutionize the printing industry by combining traditional craftsmanship with cutting-edge technology.",
+      "paragraph2": "Today, we serve thousands of customers across Poland, delivering premium printing solutions that exceed expectations. Our commitment to quality, speed, and innovation drives everything we do."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": {
+        "title": "Premium Quality",
+        "description": "We use only the finest materials and latest printing technologies to ensure every product meets our high standards."
+      },
+      "speed": {
+        "title": "Fast Delivery",
+        "description": "Our efficient processes and logistics network ensure your orders are completed and delivered quickly."
+      },
+      "service": {
+        "title": "Excellent Service",
+        "description": "Our dedicated team provides personalized support and guidance throughout your printing journey."
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Let us help you bring your ideas to life with our professional printing services.",
+      "contact": "Contact Us",
+      "products": "View Products"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "Get in touch with our team. We're here to help with your printing needs and answer any questions you may have."
+    },
+    "info": {
+      "title": "Get in Touch",
+      "address": {
+        "title": "Address",
+        "street": "123 Printing Street",
+        "city": "Warsaw, 00-001",
+        "country": "Poland"
+      },
+      "phone": {
+        "title": "Phone",
+        "number": "+48 123 456 789"
+      },
+      "email": {
+        "title": "Email",
+        "address": "hello@drukarnia-graften.pl"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday - Friday: 8:00 AM - 6:00 PM",
+        "weekend": "Saturday: 9:00 AM - 2:00 PM"
+      }
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Enter your full name"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email address"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "What is this about?"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us about your project or ask us a question..."
+      },
+      "submit": "Send Message",
+      "successMessage": "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+      "errorMessage": "Sorry, there was an error sending your message. Please try again."
+    }
+  },
+  "legal": {
+    "navigation": {
+      "title": "Legal Information",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
+    "sidebar": {
+      "contact": {
+        "title": "Questions?",
+        "description": "Contact us if you have any questions about our legal policies.",
+        "button": "Contact Us"
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated",
+      "date": "January 1, 2025",
+      "introduction": {
+        "title": "Introduction",
+        "paragraph1": "At Drukarnia Graften, we respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and protect your information when you use our services.",
+        "paragraph2": "This policy applies to all information collected through our website, services, and any related communications."
+      },
+      "dataCollection": {
+        "title": "Information We Collect",
+        "description": "We collect the following types of personal information:",
+        "personal": {
+          "name": "Name and contact information",
+          "email": "Email addresses",
+          "phone": "Phone numbers",
+          "address": "Billing and shipping addresses"
+        }
+      },
+      "dataUsage": {
+        "title": "How We Use Your Information",
+        "description": "We use your personal information for the following purposes:",
+        "purposes": {
+          "orders": "Processing and fulfilling your orders",
+          "communication": "Communicating with you about your orders",
+          "support": "Providing customer support",
+          "legal": "Complying with legal obligations"
+        }
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "description": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "We use cookies to improve your experience on our website and to analyze how our site is used.",
+        "management": "You can control cookies through your browser settings."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "description": "Under GDPR, you have the following rights:",
+        "list": {
+          "access": "Right to access your personal data",
+          "rectification": "Right to rectify inaccurate data",
+          "erasure": "Right to erasure (right to be forgotten)",
+          "portability": "Right to data portability",
+          "objection": "Right to object to processing"
+        }
+      },
+      "contact": {
+        "title": "Contact Information",
+        "description": "If you have questions about this privacy policy or your personal data, please contact us:",
+        "address": "123 Printing Street, Warsaw, 00-001, Poland",
+        "email": "privacy@drukarnia-graften.pl",
+        "phone": "Phone"
+      }
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last updated",
+      "date": "January 1, 2025",
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "description": "By using our services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services."
+      },
+      "services": {
+        "title": "Our Services",
+        "description": "Drukarnia Graften provides professional printing services including:",
+        "list": {
+          "printing": "High-quality digital and offset printing",
+          "design": "Graphic design and layout services",
+          "delivery": "Shipping and delivery services",
+          "support": "Customer support and consultation"
+        }
+      },
+      "orders": {
+        "title": "Orders and Pricing",
+        "process": "All orders are subject to acceptance and availability. We reserve the right to refuse any order.",
+        "confirmation": "Order confirmation will be sent via email with detailed specifications and pricing.",
+        "cancellation": "Orders can be cancelled within 24 hours of confirmation, subject to production status."
+      },
+      "payment": {
+        "title": "Payment Terms",
+        "methods": "We accept various payment methods including credit cards, bank transfers, and online payment systems.",
+        "terms": "Payment is due upon order confirmation unless other arrangements have been made."
+      },
+      "delivery": {
+        "title": "Delivery",
+        "timeframes": "Delivery timeframes are estimates and may vary based on order complexity and external factors.",
+        "responsibility": "Risk of loss passes to the customer upon delivery to the specified address."
+      },
+      "quality": {
+        "title": "Quality Guarantee",
+        "guarantee": "We guarantee the quality of our work and will address any quality issues promptly.",
+        "complaints": "Quality complaints must be reported within 7 days of delivery."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "description": "Our liability is limited to the value of the specific order. We are not liable for indirect or consequential damages."
+      },
+      "intellectual": {
+        "title": "Intellectual Property",
+        "description": "Customers are responsible for ensuring they have the right to use any materials provided for printing. We respect intellectual property rights."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "description": "We reserve the right to modify these terms at any time. Changes will be posted on our website with an updated date."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "description": "For questions about these terms, please contact us:",
+        "address": "123 Printing Street, Warsaw, 00-001, Poland",
+        "email": "legal@drukarnia-graften.pl",
+        "phone": "Phone"
+      }
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last updated",
+      "date": "January 1, 2025",
+      "introduction": {
+        "title": "Introduction",
+        "paragraph1": "This Cookie Policy explains how Drukarnia Graften uses cookies and similar technologies when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.",
+        "paragraph2": "By continuing to use our website, you consent to our use of cookies in accordance with this policy."
+      },
+      "whatAreCookies": {
+        "title": "What Are Cookies?",
+        "description": "Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners to make their websites work more efficiently, as well as to provide reporting information."
+      },
+      "typesOfCookies": {
+        "title": "Types of Cookies",
+        "description": "We use different types of cookies for various purposes:",
+        "essential": {
+          "title": "Essential Cookies",
+          "description": "These cookies are strictly necessary for the operation of our website. They enable core functionality such as security, network management, and accessibility.",
+          "note": "These cookies cannot be switched off and are always active."
+        },
+        "functional": {
+          "title": "Functional Cookies",
+          "description": "These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers.",
+          "examples": {
+            "language": "Language preferences",
+            "preferences": "User interface preferences",
+            "cart": "Shopping cart contents"
+          }
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "description": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site.",
+          "examples": {
+            "usage": "How visitors use our website",
+            "performance": "Website performance metrics",
+            "errors": "Error tracking and debugging"
+          }
+        },
+        "marketing": {
+          "title": "Marketing Cookies",
+          "description": "These cookies may be set through our site by our advertising partners to build a profile of your interests and show you relevant adverts.",
+          "examples": {
+            "ads": "Targeted advertising",
+            "social": "Social media integration",
+            "tracking": "Cross-site tracking"
+          }
+        }
+      },
+      "cookiesWeUse": {
+        "title": "Cookies We Use",
+        "description": "Here are the specific cookies we use on our website:",
+        "table": {
+          "name": "Cookie Name",
+          "purpose": "Purpose",
+          "duration": "Duration",
+          "type": "Type",
+          "rows": {
+            "locale": {
+              "purpose": "Stores your language preference",
+              "duration": "1 year",
+              "type": "Essential"
+            },
+            "cart": {
+              "purpose": "Stores your shopping cart items",
+              "duration": "30 days",
+              "type": "Functional"
+            },
+            "analytics": {
+              "purpose": "Google Analytics tracking",
+              "duration": "2 years",
+              "type": "Analytics"
+            }
+          }
+        }
+      },
+      "manageCookies": {
+        "title": "How to Manage Cookies",
+        "description": "You have the right to decide whether to accept or reject cookies. You can exercise your cookie rights by setting your preferences in our cookie consent tool when it appears.",
+        "browserSettings": "You can also set or amend your web browser controls to accept or refuse cookies. If you choose to reject cookies, you may still use our website though your access to some functionality may be restricted.",
+        "note": {
+          "title": "Important Note:",
+          "description": "Disabling certain cookies may affect the functionality of our website and your user experience."
+        }
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "description": "We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Please check this page regularly for updates."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "description": "If you have any questions about our use of cookies, please contact us:",
+        "address": "123 Printing Street, Warsaw, 00-001, Poland",
+        "email": "cookies@drukarnia-graften.pl",
+        "phone": "Phone"
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try again"
+  }
+}

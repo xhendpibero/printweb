@@ -1,0 +1,346 @@
+{
+  "homepage": {
+    "title": "Profesjonalna Drukarnia Online",
+    "subtitle": "Wysokiej jakości druk wizytówek, ulotek, plakatów i innych materiałów reklamowych",
+    "hero": {
+      "heading": "Witamy w Drukarni Graften",
+      "description": "Profesjonalne usługi drukarskie z nowoczesnymi konfiguratorami i konkurencyjnymi cenami. Zamów online i otrzymaj swoje materiały szybko i niezawodnie.",
+      "cta": "Rozpocznij Konfigurację"
+    },
+    "features": {
+      "quality": {
+        "title": "Najwyższa Jakość",
+        "description": "Używamy tylko najwyższej jakości materiałów i nowoczesnych technologii druku"
+      },
+      "speed": {
+        "title": "Szybka Dostawa",
+        "description": "Ekspresowe przetwarzanie i niezawodna dostawa w całej Polsce"
+      },
+      "configurator": {
+        "title": "Łatwa Konfiguracja",
+        "description": "Intuicyjne konfiguratora online dla wszystkich rodzajów materiałów drukowanych"
+      }
+    }
+  },
+  "navigation": {
+    "home": "Strona Główna",
+    "products": "Produkty",
+    "about": "O Nas",
+    "contact": "Kontakt"
+  },
+  "about": {
+    "hero": {
+      "title": "O Drukarni Graften",
+      "description": "Jesteśmy nowoczesną drukarnią, która zapewnia wysokiej jakości usługi drukarskie z wykorzystaniem innowacyjnej technologii i wyjątkowej obsługi klienta."
+    },
+    "story": {
+      "title": "Nasza Historia",
+      "paragraph1": "Założona w 2025 roku, Drukarnia Graften powstała z wizji zrewolucjonizowania branży drukarskiej poprzez połączenie tradycyjnego rzemiosła z najnowocześniejszą technologią.",
+      "paragraph2": "Dziś obsługujemy tysiące klientów w całej Polsce, dostarczając najwyższej jakości rozwiązania drukarskie, które przewyższają oczekiwania. Nasze zaangażowanie w jakość, szybkość i innowacje napędza wszystko, co robimy."
+    },
+    "values": {
+      "title": "Nasze Wartości",
+      "quality": {
+        "title": "Najwyższa Jakość",
+        "description": "Używamy tylko najlepszych materiałów i najnowszych technologii druku, aby każdy produkt spełniał nasze wysokie standardy."
+      },
+      "speed": {
+        "title": "Szybka Dostawa",
+        "description": "Nasze efektywne procesy i sieć logistyczna zapewniają szybkie wykonanie i dostawę zamówień."
+      },
+      "service": {
+        "title": "Doskonała Obsługa",
+        "description": "Nasz dedykowany zespół zapewnia spersonalizowane wsparcie i doradztwo przez całą podróż drukowania."
+      }
+    },
+    "cta": {
+      "title": "Gotowy na Rozpoczęcie Projektu?",
+      "description": "Pozwól nam pomóc Ci wcielić Twoje pomysły w życie dzięki naszym profesjonalnym usługom drukarskim.",
+      "contact": "Skontaktuj się z Nami",
+      "products": "Zobacz Produkty"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Skontaktuj się z Nami",
+      "description": "Skontaktuj się z naszym zespołem. Jesteśmy tutaj, aby pomóc w Twoich potrzebach drukarskich i odpowiedzieć na wszelkie pytania."
+    },
+    "info": {
+      "title": "Skontaktuj się z Nami",
+      "address": {
+        "title": "Adres",
+        "street": "ul. Drukarska 123",
+        "city": "Warszawa, 00-001",
+        "country": "Polska"
+      },
+      "phone": {
+        "title": "Telefon",
+        "number": "+48 123 456 789"
+      },
+      "email": {
+        "title": "Email",
+        "address": "kontakt@drukarnia-graften.pl"
+      },
+      "hours": {
+        "title": "Godziny Pracy",
+        "weekdays": "Poniedziałek - Piątek: 8:00 - 18:00",
+        "weekend": "Sobota: 9:00 - 14:00"
+      }
+    },
+    "form": {
+      "title": "Wyślij nam Wiadomość",
+      "name": {
+        "label": "Twoje Imię",
+        "placeholder": "Wprowadź swoje imię i nazwisko"
+      },
+      "email": {
+        "label": "Adres Email",
+        "placeholder": "Wprowadź swój adres email"
+      },
+      "subject": {
+        "label": "Temat",
+        "placeholder": "Czego dotyczy Twoja wiadomość?"
+      },
+      "message": {
+        "label": "Wiadomość",
+        "placeholder": "Opowiedz nam o swoim projekcie lub zadaj pytanie..."
+      },
+      "submit": "Wyślij Wiadomość",
+      "successMessage": "Dziękujemy! Twoja wiadomość została wysłana pomyślnie. Wkrótce się z Tobą skontaktujemy.",
+      "errorMessage": "Przepraszamy, wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie."
+    }
+  },
+  "legal": {
+    "navigation": {
+      "title": "Informacje Prawne",
+      "privacy": "Polityka Prywatności",
+      "terms": "Regulamin",
+      "cookies": "Polityka Cookies"
+    },
+    "sidebar": {
+      "contact": {
+        "title": "Pytania?",
+        "description": "Skontaktuj się z nami, jeśli masz pytania dotyczące naszych polityk prawnych.",
+        "button": "Skontaktuj się"
+      }
+    },
+    "privacy": {
+      "title": "Polityka Prywatności",
+      "lastUpdated": "Ostatnia aktualizacja",
+      "date": "1 stycznia 2025",
+      "introduction": {
+        "title": "Wprowadzenie",
+        "paragraph1": "W Drukarni Graften szanujemy Twoją prywatność i zobowiązujemy się do ochrony Twoich danych osobowych. Ta polityka prywatności wyjaśnia, jak gromadzimy, wykorzystujemy i chronimy Twoje informacje podczas korzystania z naszych usług.",
+        "paragraph2": "Ta polityka dotyczy wszystkich informacji zebranych za pośrednictwem naszej strony internetowej, usług i wszelkich powiązanych komunikacji."
+      },
+      "dataCollection": {
+        "title": "Informacje, które Gromadzimy",
+        "description": "Gromadzimy następujące typy danych osobowych:",
+        "personal": {
+          "name": "Imię i dane kontaktowe",
+          "email": "Adresy email",
+          "phone": "Numery telefonów",
+          "address": "Adresy rozliczeniowe i dostawy"
+        }
+      },
+      "dataUsage": {
+        "title": "Jak Wykorzystujemy Twoje Informacje",
+        "description": "Wykorzystujemy Twoje dane osobowe w następujących celach:",
+        "purposes": {
+          "orders": "Przetwarzanie i realizacja Twoich zamówień",
+          "communication": "Komunikacja z Tobą dotycząca zamówień",
+          "support": "Zapewnienie obsługi klienta",
+          "legal": "Przestrzeganie zobowiązań prawnych"
+        }
+      },
+      "dataSecurity": {
+        "title": "Bezpieczeństwo Danych",
+        "description": "Wdrażamy odpowiednie środki techniczne i organizacyjne w celu ochrony Twoich danych osobowych przed nieuprawnionym dostępem, zmianą, ujawnieniem lub zniszczeniem."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "Używamy plików cookie, aby poprawić Twoje doświadczenia na naszej stronie internetowej i analizować sposób korzystania z naszej witryny.",
+        "management": "Możesz kontrolować pliki cookie za pomocą ustawień przeglądarki."
+      },
+      "rights": {
+        "title": "Twoje Prawa",
+        "description": "Zgodnie z RODO masz następujące prawa:",
+        "list": {
+          "access": "Prawo dostępu do swoich danych osobowych",
+          "rectification": "Prawo do sprostowania nieprawidłowych danych",
+          "erasure": "Prawo do usunięcia (prawo do bycia zapomnianym)",
+          "portability": "Prawo do przenoszenia danych",
+          "objection": "Prawo sprzeciwu wobec przetwarzania"
+        }
+      },
+      "contact": {
+        "title": "Informacje Kontaktowe",
+        "description": "Jeśli masz pytania dotyczące tej polityki prywatności lub swoich danych osobowych, skontaktuj się z nami:",
+        "address": "ul. Drukarska 123, Warszawa, 00-001, Polska",
+        "email": "prywatnosc@drukarnia-graften.pl",
+        "phone": "Telefon"
+      }
+    },
+    "terms": {
+      "title": "Regulamin",
+      "lastUpdated": "Ostatnia aktualizacja",
+      "date": "1 stycznia 2025",
+      "acceptance": {
+        "title": "Akceptacja Warunków",
+        "description": "Korzystając z naszych usług, zgadzasz się być związany niniejszym Regulaminem. Jeśli nie zgadzasz się z tymi warunkami, nie korzystaj z naszych usług."
+      },
+      "services": {
+        "title": "Nasze Usługi",
+        "description": "Drukarnia Graften świadczy profesjonalne usługi drukarskie, w tym:",
+        "list": {
+          "printing": "Wysokiej jakości druk cyfrowy i offsetowy",
+          "design": "Usługi projektowania graficznego i składu",
+          "delivery": "Usługi wysyłki i dostawy",
+          "support": "Obsługa klienta i doradztwo"
+        }
+      },
+      "orders": {
+        "title": "Zamówienia i Cennik",
+        "process": "Wszystkie zamówienia podlegają akceptacji i dostępności. Zastrzegamy sobie prawo do odrzucenia każdego zamówienia.",
+        "confirmation": "Potwierdzenie zamówienia zostanie wysłane e-mailem ze szczegółowymi specyfikacjami i cenami.",
+        "cancellation": "Zamówienia można anulować w ciągu 24 godzin od potwierdzenia, w zależności od statusu produkcji."
+      },
+      "payment": {
+        "title": "Warunki Płatności",
+        "methods": "Akceptujemy różne metody płatności, w tym karty kredytowe, przelewy bankowe i systemy płatności online.",
+        "terms": "Płatność jest wymagalna po potwierdzeniu zamówienia, chyba że dokonano innych ustaleń."
+      },
+      "delivery": {
+        "title": "Dostawa",
+        "timeframes": "Terminy dostaw są szacunkowe i mogą się różnić w zależności od złożoności zamówienia i czynników zewnętrznych.",
+        "responsibility": "Ryzyko utraty przechodzi na klienta po dostawie pod wskazany adres."
+      },
+      "quality": {
+        "title": "Gwarancja Jakości",
+        "guarantee": "Gwarantujemy jakość naszej pracy i szybko rozwiążemy wszelkie problemy z jakością.",
+        "complaints": "Reklamacje dotyczące jakości należy zgłaszać w ciągu 7 dni od dostawy."
+      },
+      "liability": {
+        "title": "Ograniczenie Odpowiedzialności",
+        "description": "Nasza odpowiedzialność jest ograniczona do wartości konkretnego zamówienia. Nie ponosimy odpowiedzialności za szkody pośrednie lub następcze."
+      },
+      "intellectual": {
+        "title": "Własność Intelektualna",
+        "description": "Klienci są odpowiedzialni za zapewnienie, że mają prawo do używania wszelkich materiałów dostarczonych do druku. Szanujemy prawa własności intelektualnej."
+      },
+      "changes": {
+        "title": "Zmiany w Regulaminie",
+        "description": "Zastrzegamy sobie prawo do modyfikacji tych warunków w dowolnym momencie. Zmiany zostaną opublikowane na naszej stronie internetowej z zaktualizowaną datą."
+      },
+      "contact": {
+        "title": "Informacje Kontaktowe",
+        "description": "W przypadku pytań dotyczących tych warunków, skontaktuj się z nami:",
+        "address": "ul. Drukarska 123, Warszawa, 00-001, Polska",
+        "email": "regulamin@drukarnia-graften.pl",
+        "phone": "Telefon"
+      }
+    },
+    "cookies": {
+      "title": "Polityka Cookies",
+      "lastUpdated": "Ostatnia aktualizacja",
+      "date": "1 stycznia 2025",
+      "introduction": {
+        "title": "Wprowadzenie",
+        "paragraph1": "Ta Polityka Cookies wyjaśnia, jak Drukarnia Graften używa plików cookie i podobnych technologii podczas odwiedzania naszej strony internetowej. Wyjaśnia, czym są te technologie i dlaczego ich używamy, a także Twoje prawa do kontrolowania ich używania przez nas.",
+        "paragraph2": "Kontynuując korzystanie z naszej strony internetowej, wyrażasz zgodę na używanie przez nas plików cookie zgodnie z tą polityką."
+      },
+      "whatAreCookies": {
+        "title": "Czym są Pliki Cookie?",
+        "description": "Pliki cookie to małe pliki danych, które są umieszczane na Twoim komputerze lub urządzeniu mobilnym podczas odwiedzania strony internetowej. Pliki cookie są szeroko używane przez właścicieli stron internetowych, aby ich strony działały bardziej efektywnie, a także w celu dostarczania informacji raportowych."
+      },
+      "typesOfCookies": {
+        "title": "Rodzaje Plików Cookie",
+        "description": "Używamy różnych rodzajów plików cookie do różnych celów:",
+        "essential": {
+          "title": "Niezbędne Pliki Cookie",
+          "description": "Te pliki cookie są ściśle niezbędne do działania naszej strony internetowej. Umożliwiają podstawowe funkcje, takie jak bezpieczeństwo, zarządzanie siecią i dostępność.",
+          "note": "Te pliki cookie nie mogą być wyłączone i są zawsze aktywne."
+        },
+        "functional": {
+          "title": "Funkcjonalne Pliki Cookie",
+          "description": "Te pliki cookie umożliwiają stronie internetowej zapewnienie ulepszonej funkcjonalności i personalizacji. Mogą być ustawiane przez nas lub przez dostawców zewnętrznych.",
+          "examples": {
+            "language": "Preferencje językowe",
+            "preferences": "Preferencje interfejsu użytkownika",
+            "cart": "Zawartość koszyka zakupowego"
+          }
+        },
+        "analytics": {
+          "title": "Analityczne Pliki Cookie",
+          "description": "Te pliki cookie pozwalają nam liczyć wizyty i źródła ruchu, dzięki czemu możemy mierzyć i poprawiać wydajność naszej witryny.",
+          "examples": {
+            "usage": "Jak odwiedzający korzystają z naszej strony",
+            "performance": "Metryki wydajności strony internetowej",
+            "errors": "Śledzenie błędów i debugowanie"
+          }
+        },
+        "marketing": {
+          "title": "Marketingowe Pliki Cookie",
+          "description": "Te pliki cookie mogą być ustawiane przez naszą stronę przez naszych partnerów reklamowych, aby zbudować profil Twoich zainteresowań i pokazać Ci odpowiednie reklamy.",
+          "examples": {
+            "ads": "Reklamy ukierunkowane",
+            "social": "Integracja z mediami społecznościowymi",
+            "tracking": "Śledzenie między witrynami"
+          }
+        }
+      },
+      "cookiesWeUse": {
+        "title": "Pliki Cookie, których Używamy",
+        "description": "Oto konkretne pliki cookie, których używamy na naszej stronie internetowej:",
+        "table": {
+          "name": "Nazwa Cookie",
+          "purpose": "Cel",
+          "duration": "Czas trwania",
+          "type": "Typ",
+          "rows": {
+            "locale": {
+              "purpose": "Przechowuje Twoje preferencje językowe",
+              "duration": "1 rok",
+              "type": "Niezbędne"
+            },
+            "cart": {
+              "purpose": "Przechowuje przedmioty w koszyku zakupowym",
+              "duration": "30 dni",
+              "type": "Funkcjonalne"
+            },
+            "analytics": {
+              "purpose": "Śledzenie Google Analytics",
+              "duration": "2 lata",
+              "type": "Analityczne"
+            }
+          }
+        }
+      },
+      "manageCookies": {
+        "title": "Jak Zarządzać Plikami Cookie",
+        "description": "Masz prawo zdecydować, czy zaakceptować czy odrzucić pliki cookie. Możesz skorzystać ze swoich praw dotyczących plików cookie, ustawiając swoje preferencje w naszym narzędziu zgody na pliki cookie, gdy się pojawi.",
+        "browserSettings": "Możesz również ustawić lub zmienić kontrolki przeglądarki internetowej, aby akceptować lub odrzucać pliki cookie. Jeśli zdecydujesz się odrzucić pliki cookie, nadal możesz korzystać z naszej strony internetowej, chociaż dostęp do niektórych funkcji może być ograniczony.",
+        "note": {
+          "title": "Ważna Uwaga:",
+          "description": "Wyłączenie niektórych plików cookie może wpłynąć na funkcjonalność naszej strony internetowej i Twoje doświadczenie użytkownika."
+        }
+      },
+      "changes": {
+        "title": "Zmiany w tej Polityce",
+        "description": "Możemy od czasu do czasu aktualizować tę Politykę Cookies, aby odzwierciedlić zmiany w naszych praktykach lub z innych powodów operacyjnych, prawnych lub regulacyjnych. Sprawdzaj tę stronę regularnie w poszukiwaniu aktualizacji."
+      },
+      "contact": {
+        "title": "Informacje Kontaktowe",
+        "description": "Jeśli masz pytania dotyczące naszego używania plików cookie, skontaktuj się z nami:",
+        "address": "ul. Drukarska 123, Warszawa, 00-001, Polska",
+        "email": "cookies@drukarnia-graften.pl",
+        "phone": "Telefon"
+      }
+    }
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Wystąpił błąd",
+    "tryAgain": "Spróbuj ponownie"
+  }
+}
