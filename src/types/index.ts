@@ -93,7 +93,7 @@ export interface ConfiguratorField {
   label: string
   required: boolean
   options?: ConfiguratorOption[]
-  validation?: Record<string, any>
+  validation?: Record<string, unknown>
 }
 
 export interface ConfiguratorOption {
@@ -106,7 +106,7 @@ export interface ConfiguratorOption {
 
 export interface PricingRule {
   id: string
-  condition: Record<string, any>
+  condition: Record<string, unknown>
   modifier: number
   type: 'percentage' | 'fixed'
 }
@@ -148,7 +148,7 @@ export interface Order {
 export interface OrderItem {
   id: string
   productId: string
-  configuration: Record<string, any>
+  configuration: Record<string, unknown>
   quantity: number
   unitPrice: number
   totalPrice: number

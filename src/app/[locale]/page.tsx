@@ -13,6 +13,7 @@ import {
   Quote,
 } from "lucide-react";
 import { MainLayout } from "@/components/layout";
+import Link from 'next/link';
 
 export default function HomePage() {
   const t = useTranslations("homepage");
@@ -119,12 +120,12 @@ export default function HomePage() {
               {t("hero.cta")}
               <ArrowRight className="w-5 h-5" />
             </button>
-            <a
+            <Link
               href="en/search?product=flyers"
               className="px-8 py-3 rounded-lg text-lg font-semibold bg-white text-indigo-700 hover:bg-indigo-50 transition-colors"
             >
               Browse catalog
-            </a>
+            </Link>
           </div>
           <div className="mt-6 flex items-center justify-center gap-6 text-sm text-gray-600">
             <div className="flex items-center gap-2">
@@ -196,16 +197,16 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold text-gray-900">
               Popular products
             </h2>
-            <a
+            <Link
               href="en/products/flyers"
               className="text-indigo-700 hover:text-indigo-800 font-medium"
             >
               View all
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((c, i) => (
-              <a
+              <Link
                 key={i}
                 href={`en/products/${c.name.toLowerCase().replace(/\s+/g, "-")}`}
                 className="group bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow"
@@ -221,7 +222,7 @@ export default function HomePage() {
                   <div className="font-semibold text-gray-900">{c.name}</div>
                   <div className="text-sm text-gray-600">{c.desc}</div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -292,13 +293,13 @@ export default function HomePage() {
               <li>Free online proof</li>
               <li>2 day production</li>
             </ul>
-            <a
+            <Link
               href="en/products/business-cards"
               className="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-indigo-600 text-white font-semibold"
             >
               Start order
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
           <div className="bg-white rounded-2xl p-8 shadow border">
             <div className="text-sm font-semibold text-indigo-700 mb-2">
@@ -313,13 +314,13 @@ export default function HomePage() {
               <li>Priority production</li>
               <li>Tracked shipping</li>
             </ul>
-            <a
+            <Link
               href="en/products/flyers"
               className="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-indigo-600 text-white font-semibold"
             >
               Start order
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
           <div className="bg-white rounded-2xl p-8 shadow border">
             <div className="text-sm font-semibold text-indigo-700 mb-2">
@@ -334,13 +335,13 @@ export default function HomePage() {
               <li>Dedicated support</li>
               <li>Contract pricing</li>
             </ul>
-            <a
+            <Link
               href="en/contact"
               className="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-indigo-600 text-white font-semibold"
             >
               Get a quote
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
         </div>
         {/* FAQ */}
@@ -371,20 +372,20 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <a
+              <Link
                 href="tel:+62123456789"
                 className="inline-flex items-center gap-2 bg-white text-indigo-700 px-5 py-3 rounded-lg font-semibold"
               >
                 <Phone className="w-5 h-5" />
                 Call us
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                href="en/contact"
                 className="inline-flex items-center gap-2 border border-white px-5 py-3 rounded-lg font-semibold"
               >
                 <Mail className="w-5 h-5" />
                 Send message
-              </a>
+              </Link>
             </div>
           </div>
         </div>
