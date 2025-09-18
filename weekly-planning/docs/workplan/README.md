@@ -1,0 +1,36 @@
+# Workplan Index
+
+This folder contains sliced implementation work items for parallel execution. Assign owners, add dates, and track status in PRs. Each item includes scope, tasks, APIs, and acceptance criteria.
+
+## Index
+
+1. [01-catalog-taxonomy-slugs.md](./01-catalog-taxonomy-slugs.md)
+2. [02-search-api-endpoint.md](./02-search-api-endpoint.md)
+3. [03-search-ranking-service.md](./03-search-ranking-service.md)
+4. [04-search-ui-cards-and-hover.md](./04-search-ui-cards-and-hover.md)
+5. [05-search-filter-url-model.md](./05-search-filter-url-model.md)
+6. [06-product-detail-endpoint.md](./06-product-detail-endpoint.md)
+7. [07-configurator-option-constraints.md](./07-configurator-option-constraints.md)
+8. [08-configurator-quantity-tiers.md](./08-configurator-quantity-tiers.md)
+9. [09-lead-time-and-cutoff.md](./09-lead-time-and-cutoff.md)
+10. [10-file-upload-service.md](./10-file-upload-service.md)
+11. [11-virus-scanning-and-validation.md](./11-virus-scanning-and-validation.md)
+12. [12-cms-schema-products-and-taxonomy.md](./12-cms-schema-products-and-taxonomy.md)
+13. [13-cms-localization-and-defaults.md](./13-cms-localization-and-defaults.md)
+14. [14-pricing-engine-core.md](./14-pricing-engine-core.md)
+15. [15-pricing-rules-and-anchors.md](./15-pricing-rules-and-anchors.md)
+16. [16-price-versioning-and-revalidation.md](./16-price-versioning-and-revalidation.md)
+17. [17-delivery-pricing-and-shipping-options.md](./17-delivery-pricing-and-shipping-options.md)
+18. [18-cart-store-and-persistence.md](./18-cart-store-and-persistence.md)
+19. [19-checkout-bank-transfer-mvp.md](./19-checkout-bank-transfer-mvp.md)
+20. [20-tax-vat-determination.md](./20-tax-vat-determination.md)
+21. [21-discount-codes-and-promotions.md](./21-discount-codes-and-promotions.md)
+22. [22-shipping-zones-and-carriers.md](./22-shipping-zones-and-carriers.md)
+23. [23-tracking-and-notifications.md](./23-tracking-and-notifications.md)
+24. [24-accounts-order-history-and-invoices.md](./24-accounts-order-history-and-invoices.md)
+25. [25-admin-portal-core-operations.md](./25-admin-portal-core-operations.md)
+26. [26-legal-and-gdpr-compliance.md](./26-legal-and-gdpr-compliance.md)
+27. [27-i18n-locales-hreflang-canonicals.md](./27-i18n-locales-hreflang-canonicals.md)
+28. [28-analytics-ga4-and-consent.md](./28-analytics-ga4-and-consent.md)
+29. [29-seo-sitemaps-and-indexing.md](./29-seo-sitemaps-and-indexing.md)
+30. [30-performance-caching-ssg-isr-ssr.md](./30-performance-caching-ssg-isr-ssr.md)
