@@ -14,6 +14,7 @@ export interface CartItem {
   configFingerprint: string
   thumbnail?: string
   shippingOption?: string
+  orderName?: string
 }
 
 export interface CartState {

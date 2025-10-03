@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -27,21 +27,26 @@ body {
 
 /* Placeholder styling for better visibility */
 ::placeholder {
-  color: #6b7280; /* gray-500 */
+  color: #6b7280;
   opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-  color: #6b7280; /* gray-500 */
+  color: #6b7280;
   opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: #6b7280; /* gray-500 */
+  color: #6b7280;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #6b7280; /* gray-500 */
+  color: #6b7280;
   opacity: 1;
 }
+
+.cart-products { background-color: #f8fafc; border: 1px solid #e5e7eb; border-radius: 0.5rem; }
+.cart-products > *:nth-child(odd) { background-color: #ffffff; }
+.cart-products > *:nth-child(even) { background-color: #f9fafb; }
+.cart-products > * { padding-left: 0.75rem; padding-right: 0.75rem; }

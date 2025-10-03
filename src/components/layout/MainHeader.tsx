@@ -4,11 +4,14 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { ProductsDropdown } from './ProductsDropdown';
+import { ShoppingCart } from 'lucide-react';
+import { useCartStore } from '@/stores/cart-store';
 
 export function MainHeader() {
   const nav = useTranslations('navigation');
   const params = useParams();
   const locale = params.locale as string;
+  const totalItems = useCartStore((s) => s.getTotalItems());
 
   return (
     <header className="bg-white shadow-sm">
@@ -46,8 +49,17 @@ export function MainHeader() {
             </nav>
           </div>
 
-          {/* Mobile menu button - placeholder for future implementation */}
-          <div className="md:hidden">
+          <div className="flex items-center gap-3">
+            <Link
+              href={`/${locale}/order/cart`}
+              className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-gray-300 text-gray-800 hover:bg-gray-50"
+              aria-label="Open cart"
+            >
+              <ShoppingCart className="w-5 h-5" />
+              <span className="text-sm font-medium">Cart{totalItems ? ` (${totalItems})` : ''}</span>
+            </Link>
+
+            <div className="md:hidden">
             <button
               type="button"
               className="text-gray-500 hover:text-gray-700 hover:bg-gray-100 p-2 rounded-md transition-colors"
@@ -57,6 +69,7 @@ export function MainHeader() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
+            </div>
           </div>
         </div>
       </div>

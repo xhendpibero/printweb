@@ -11,10 +11,10 @@ interface FinishingOption {
   sides: ('front' | 'both')[];
 }
 
-interface SelectedFinishing {
-  id: string;
-  side: 'front' | 'both';
-}
+// interface SelectedFinishing {
+//   id: string;
+//   side: 'front' | 'both';
+// }
 
 interface SurfaceFinishingSelectorProps {
   title: string;

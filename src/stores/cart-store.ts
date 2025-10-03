@@ -6,6 +6,8 @@ interface CartStore extends CartState {
   addItem: (item: Omit<CartItem, 'itemId'>) => void
   removeItem: (itemId: string) => void
   updateItemQuantity: (itemId: string, quantity: number) => void
+  updateItemOrderName: (itemId: string, orderName: string) => void
+  setCurrency: (currency: CartState['currency']) => void
   clearCart: () => void
   getTotalItems: () => number
   getTotalPrice: () => number
@@ -58,6 +60,18 @@ export const useCartStore = create<CartStore>()(
 
       clearCart: () => {
         set({ items: [], shippingOption: undefined })
+      },
+
+      updateItemOrderName: (itemId, orderName) => {
+        set(state => ({
+          items: state.items.map(item =>
+            item.itemId === itemId ? { ...item, orderName } : item
+          )
+        }))
+      },
+
+      setCurrency: (currency) => {
+        set({ currency })
       },
 
       getTotalItems: () => {

@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { MainLayout } from '@/components/layout';
 import { notFound } from 'next/navigation';
 import { useParams } from 'next/navigation';
+import { useCartStore } from '@/stores/cart-store';
+import { addToast } from '@/components/ui/Toast';
 import { FormatSelector } from '@/components/product/FormatSelector';
 import { ProductImageGallery } from '@/components/product/ProductImageGallery';
 import { Breadcrumb } from '@/components/product/Breadcrumb';
@@ -61,6 +63,17 @@ export default function ProductPage() {
   const locale = params.locale as string;
   const slug = params.slug as string;
   const [loading, setLoading] = useState(false);
+  const addItem = useCartStore((s) => s.addItem);
+  
+  // Configuration state
+  const [configuration, setConfiguration] = useState({
+    format: 'A4 - 210 x 297 mm',
+    paper: 'Gloss 130g',
+    colors: '4/4',
+    finishings: [] as string[],
+    projectPreparation: 'Customer provides print-ready files'
+  });
+  const [quantity, setQuantity] = useState(1000);
   
   // Get product data (mock for now)
   const product = mockProducts[slug as keyof typeof mockProducts] || mockProducts['raised-spot-gloss-flyers'];
@@ -68,6 +81,43 @@ export default function ProductPage() {
   if (!product) {
     notFound();
   }
+
+  const handleAddToCart = async () => {
+    setLoading(true);
+    
+    try {
+      // Create cart item
+      const cartItem = {
+        slug,
+        quantity,
+        configuration,
+        priceVersion: 1,
+        configFingerprint: `${slug}-${configuration.format}-${configuration.paper}-${configuration.colors}`,
+        thumbnail: product.images[0],
+        shippingOption: 'standard'
+      };
+      
+      addItem(cartItem);
+      
+      addToast({
+        type: 'success',
+        title: 'Added to cart',
+        message: `${product.name} has been added to your cart`
+      });
+      
+      // Optionally redirect to cart
+      // router.push(`/${locale}/order/cart`);
+      
+    } catch {
+      addToast({
+        type: 'error',
+        title: 'Failed to add to cart',
+        message: 'Please try again'
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <MainLayout>
@@ -108,16 +158,14 @@ export default function ProductPage() {
               {/* Format Selection */}
               <FormatSelector 
                 onSelect={(formatId) => {
-                  console.log('Selected format:', formatId);
-                  // TODO: Update configuration state
+                  setConfiguration(prev => ({ ...prev, format: formatId }));
                 }}
               />
 
               {/* Paper Selection */}
               <PaperSelector 
                 onSelect={(paperId, weight) => {
-                  console.log('Selected paper:', paperId, weight);
-                  // TODO: Update configuration state
+                  setConfiguration(prev => ({ ...prev, paper: `${paperId} ${weight}` }));
                 }}
               />
 
@@ -136,8 +184,7 @@ export default function ProductPage() {
               {/* Color Selection */}
               <ColorSelector 
                 onSelect={(colorId) => {
-                  console.log('Selected color:', colorId);
-                  // TODO: Update configuration state
+                  setConfiguration(prev => ({ ...prev, colors: colorId }));
                 }}
               />
 
@@ -250,40 +297,40 @@ export default function ProductPage() {
             <div>
               {/* Quantity & Pricing Table */}
               <QuantityPricingTable
-                onQuantitySelect={(quantity) => {
-                  console.log('Selected quantity:', quantity);
-                  // TODO: Update configuration state and pricing
+                onQuantitySelect={(selectedQuantity) => {
+                  setQuantity(selectedQuantity);
                 }}
               />
               <OrderSummaryCard
                 summary={{
                   productName: product.name,
-                  quantity: 1000, // Default quantity
+                  quantity: quantity,
                   configuration: {
-                    format: 'A7 (74 × 105 mm)',
-                    paper: 'matte 250g',
-                    colors: 'both sides (4/4)',
-                    finishings: ['Spot 3D UV (front)'],
-                    projectPreparation: 'I will upload ready file'
+                    format: configuration.format,
+                    paper: configuration.paper,
+                    colors: configuration.colors,
+                    finishings: configuration.finishings,
+                    projectPreparation: configuration.projectPreparation
                   },
                   pricing: {
-                    printingCost: 71.79,
-                    deliveryCost: 4.85,
-                    netPrice: 76.64,
-                    currency: 'EUR'
+                    printingCost: 71.79 * (quantity / 1000), // Scale with quantity
+                    deliveryCost: 15.00,
+                    netPrice: (71.79 * (quantity / 1000)) + 15.00,
+                    currency: 'PLN'
                   },
                   delivery: {
                     estimatedDate: 'Thursday (09/18)',
                     orderDeadline: 'Order today until 18:00'
                   }
                 }}
-                onAddToCart={() => {
-                  console.log('Add to cart clicked');
-                  // TODO: Add to cart functionality
-                }}
+                onAddToCart={handleAddToCart}
                 onCopyLink={() => {
-                  console.log('Copy link clicked');
-                  // TODO: Copy configuration URL
+                  navigator.clipboard.writeText(window.location.href);
+                  addToast({
+                    type: 'success',
+                    title: 'Link copied',
+                    message: 'Configuration link copied to clipboard'
+                  });
                 }}
                 loading={loading}
               />
