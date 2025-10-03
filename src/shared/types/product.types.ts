@@ -1,4 +1,4 @@
-import type { BaseEntity, Currency } from './common.types'
+import type { BaseEntity } from './common.types'
 
 export enum ProductType {
   FLYERS = 'flyers',

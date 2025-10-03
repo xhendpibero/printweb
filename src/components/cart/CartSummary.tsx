@@ -2,23 +2,18 @@
 
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
+import type { Currency } from '@/shared/types'
+import { formatMoney } from '@/shared/utils'
 import { useCartStore } from '@/stores/cart-store'
+import { useCartCalculations } from '@/features/cart/hooks'
 import { CurrencyToggle } from './CurrencyToggle'
 import { DiscountCode } from './DiscountCode'
-
-function formatMoney(amount: number, currency: 'PLN'|'EUR') {
-  try {
-    return new Intl.NumberFormat(undefined, { style: 'currency', currency }).format(amount)
-  } catch {
-    return `${currency} ${amount.toFixed(2)}`
-  }
-}
 
 export function CartSummary() {
   const params = useParams()
   const locale = params.locale as string
-  const currency = useCartStore((s) => s.currency)
-  const total = useCartStore((s) => s.getTotalPrice())
+  const currency = useCartStore((s) => s.currency) as Currency
+  const calculations = useCartCalculations()
 
   return (
     <aside className="w-full md:w-80 lg:w-96 md:sticky md:top-4">
@@ -41,19 +36,19 @@ export function CartSummary() {
         <div className="space-y-3 text-sm">
           <div className="flex items-center justify-between">
             <span className="text-gray-600">Printing cost (net)</span>
-            <span className="font-medium">{formatMoney(total * 0.82, currency)}</span>
+            <span className="font-medium">{formatMoney(calculations.printingNet, currency)}</span>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-gray-600">Delivery cost (net)</span>
-            <span className="font-medium">{formatMoney(15.00, currency)}</span>
+            <span className="font-medium">{formatMoney(calculations.deliveryNet, currency)}</span>
           </div>
           <div className="pt-2 border-t flex items-center justify-between text-base">
             <span className="text-gray-800">Net price</span>
-            <span className="font-semibold">{formatMoney(total + 15.00, currency)}</span>
+            <span className="font-semibold">{formatMoney(calculations.totalNet, currency)}</span>
           </div>
           <div className="flex items-center justify-between text-base">
             <span className="text-gray-800">Gross price (VAT 23%)</span>
-            <span className="font-semibold">{formatMoney((total + 15.00) * 1.23, currency)}</span>
+            <span className="font-semibold">{formatMoney(calculations.totalGross, currency)}</span>
           </div>
         </div>
 
