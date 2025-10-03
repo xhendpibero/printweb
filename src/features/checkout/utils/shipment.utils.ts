@@ -1,7 +1,6 @@
 import type { Address } from '@/shared/types'
 import type { ShippingMethod, AddressFormData } from '../types'
 import { isValidPhone, isValidPostalCode, isRequired } from '@/shared/utils'
-import { generateId } from '@/shared/utils'
 
 /**
  * Validate address form data
