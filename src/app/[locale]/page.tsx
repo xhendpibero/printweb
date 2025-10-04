@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { MainLayout } from "@/components/layout";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function HomePage() {
   const t = useTranslations("homepage");
@@ -211,11 +212,12 @@ export default function HomePage() {
                 href={`en/products/${c.name.toLowerCase().replace(/\s+/g, "-")}`}
                 className="group bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow"
               >
-                <div className="aspect-[4/3] bg-gray-100">
-                  <img
+                <div className="aspect-[4/3] bg-gray-100 relative overflow-hidden">
+                  <Image
                     src={c.img}
                     alt={c.name}
-                    className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform"
+                    fill
+                    className="object-cover group-hover:scale-[1.02] transition-transform"
                   />
                 </div>
                 <div className="p-4">

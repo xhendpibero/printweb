@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
+import { useCartTranslations } from '@/shared/hooks'
 import { useCartStore } from '@/stores/cart-store'
 import { CartList } from '@/components/cart/CartList'
 import { CartSummary } from '@/components/cart/CartSummary'
@@ -10,6 +11,7 @@ import { CartDemoSeed } from '@/components/cart/CartDemoSeed'
 export function CartPageContainer() {
   const params = useParams()
   const locale = params.locale as string
+  const t = useCartTranslations()
   
   // Trigger client store hydration for SSR safety
   useCartStore.getState()
@@ -20,9 +22,9 @@ export function CartPageContainer() {
       
       {/* Page Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Shopping Cart</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">{t('title')}</h1>
         <p className="text-gray-600">
-          Review your items and proceed to checkout when ready.
+          {t('subtitle')}
         </p>
       </div>
 
@@ -40,7 +42,7 @@ export function CartPageContainer() {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              Continue Shopping
+              {t('continueShopping')}
             </Link>
           </div>
         </div>

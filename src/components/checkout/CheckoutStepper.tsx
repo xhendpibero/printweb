@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
+import { useCheckoutTranslations } from '@/shared/hooks'
 import { Check, ShoppingCart, Upload, Truck, CreditCard, FileText } from 'lucide-react'
 
 interface Step {
@@ -19,6 +20,7 @@ interface CheckoutStepperProps {
 export function CheckoutStepper({ currentStep }: CheckoutStepperProps) {
   const params = useParams()
   const locale = params.locale as string
+  const t = useCheckoutTranslations()
 
   const getStepStatus = (stepId: string): 'complete' | 'current' | 'upcoming' => {
     const stepOrder = ['cart', 'upload', 'shipment', 'payment', 'summary']
@@ -33,35 +35,35 @@ export function CheckoutStepper({ currentStep }: CheckoutStepperProps) {
   const steps: Step[] = [
     {
       id: 'cart',
-      name: 'Cart',
+      name: t('steps.cart'),
       href: `/${locale}/order/cart`,
       icon: ShoppingCart,
       status: getStepStatus('cart')
     },
     {
       id: 'upload',
-      name: 'Upload Files',
+      name: t('steps.upload'),
       href: `/${locale}/order/upload`,
       icon: Upload,
       status: getStepStatus('upload')
     },
     {
       id: 'shipment',
-      name: 'Shipping',
+      name: t('steps.shipment'),
       href: `/${locale}/order/shipment`,
       icon: Truck,
       status: getStepStatus('shipment')
     },
     {
       id: 'payment',
-      name: 'Payment',
+      name: t('steps.payment'),
       href: `/${locale}/order/payment`,
       icon: CreditCard,
       status: getStepStatus('payment')
     },
     {
       id: 'summary',
-      name: 'Review',
+      name: t('steps.summary'),
       href: `/${locale}/order/summary`,
       icon: FileText,
       status: getStepStatus('summary')

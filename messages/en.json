@@ -338,6 +338,131 @@
       }
     }
   },
+  "cart": {
+    "title": "Shopping Cart",
+    "subtitle": "Review your items and proceed to checkout when ready.",
+    "continueShopping": "Continue Shopping",
+    "summary": "Summary",
+    "printingCostNet": "Printing cost (net)",
+    "deliveryCostNet": "Delivery cost (net)",
+    "netPrice": "Net price",
+    "grossPrice": "Gross price (VAT 23%)",
+    "uploadFile": "Upload file",
+    "finishLater": "Finish later",
+    "finishLaterHelp": "What is the \"Finish later\" option?",
+    "empty": {
+      "title": "Your cart is empty",
+      "description": "Add some products to get started",
+      "browseProducts": "Browse Products"
+    },
+    "item": {
+      "quantity": "Quantity",
+      "configuration": "Configuration",
+      "unitPrice": "Unit price",
+      "totalPrice": "Total price",
+      "filesUploaded": "Files uploaded",
+      "filesRequired": "Files required",
+      "actions": {
+        "duplicate": "Duplicate",
+        "edit": "Edit Configuration",
+        "addOrderName": "Add Order Name",
+        "remove": "Remove"
+      }
+    },
+    "discount": {
+      "placeholder": "Enter discount code",
+      "apply": "Apply",
+      "applied": "Discount applied",
+      "invalid": "Invalid discount code",
+      "samples": "Try: WELCOME10, FIRST20"
+    }
+  },
+  "checkout": {
+    "steps": {
+      "cart": "Cart",
+      "upload": "Upload Files",
+      "shipment": "Shipping",
+      "payment": "Payment",
+      "summary": "Summary"
+    },
+    "upload": {
+      "title": "Upload Your Files",
+      "subtitle": "Upload the files for your print jobs",
+      "dropzone": "Drop files here or click to browse",
+      "requirements": {
+        "title": "File Requirements",
+        "formats": "Accepted formats: PDF, AI, EPS, PSD",
+        "size": "Maximum file size: 100MB",
+        "resolution": "Minimum resolution: 300 DPI"
+      },
+      "navigation": {
+        "backToCart": "Back to Cart",
+        "continueToShipping": "Continue to Shipping"
+      }
+    },
+    "shipment": {
+      "title": "Shipping Address & Method",
+      "subtitle": "Choose where you want your order to be delivered and how it should be shipped",
+      "addresses": "Your Addresses",
+      "addNewAddress": "Add New Address",
+      "shippingMethod": "Shipping Method",
+      "orderSummary": "Order Summary",
+      "shippingCost": "Shipping Cost",
+      "navigation": {
+        "backToUpload": "Back to Upload",
+        "continueToPayment": "Continue to Payment"
+      }
+    },
+    "payment": {
+      "title": "Payment & Invoice Details",
+      "subtitle": "Choose your payment method and provide invoice information",
+      "paymentMethod": "Payment Method",
+      "invoiceDetails": "Invoice Details",
+      "invoiceType": {
+        "individual": "Individual",
+        "company": "Company"
+      },
+      "navigation": {
+        "backToShipment": "Back to Shipment",
+        "continueToSummary": "Continue to Summary"
+      }
+    },
+    "summary": {
+      "title": "Order Summary",
+      "subtitle": "Review your order details before placing your order",
+      "orderItems": "Order Items",
+      "shippingInformation": "Shipping Information",
+      "paymentAndInvoice": "Payment & Invoice",
+      "orderTotal": "Order Total",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "tax": "Tax (VAT 23%)",
+      "total": "Total",
+      "allPricesIncludeVAT": "All prices include VAT",
+      "placeOrder": "Place Order",
+      "placingOrder": "Placing Order...",
+      "navigation": {
+        "backToPayment": "Back to Payment"
+      }
+    }
+  },
+  "products": {
+    "notFound": {
+      "title": "Product not found",
+      "description": "The product you're looking for doesn't exist."
+    },
+    "configuration": {
+      "format": "Format",
+      "paper": "Paper",
+      "colors": "Colors",
+      "finishings": "Surface Finishing",
+      "projectPreparation": "Project Preparation",
+      "quantity": "Quantity",
+      "addToCart": "Add to Cart",
+      "copyLink": "Copy Configuration Link",
+      "linkCopied": "Configuration link copied to clipboard"
+    }
+  },
   "common": {
     "loading": "Loading...",
     "error": "An error occurred",

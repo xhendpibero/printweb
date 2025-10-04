@@ -1,0 +1,69 @@
+{
+  "steps": {
+    "cart": "Koszyk",
+    "upload": "Prześlij pliki",
+    "shipment": "Dostawa",
+    "payment": "Płatność",
+    "summary": "Podsumowanie"
+  },
+  "upload": {
+    "title": "Prześlij swoje pliki",
+    "subtitle": "Prześlij pliki do druku",
+    "dropzone": "Upuść pliki tutaj lub kliknij, aby przeglądać",
+    "requirements": {
+      "title": "Wymagania plików",
+      "formats": "Akceptowane formaty: PDF, AI, EPS, PSD",
+      "size": "Maksymalny rozmiar pliku: 100MB",
+      "resolution": "Minimalna rozdzielczość: 300 DPI"
+    },
+    "navigation": {
+      "backToCart": "Powrót do koszyka",
+      "continueToShipping": "Kontynuuj do dostawy"
+    }
+  },
+  "shipment": {
+    "title": "Adres i sposób dostawy",
+    "subtitle": "Wybierz gdzie chcesz otrzymać zamówienie i jak ma być dostarczone",
+    "addresses": "Twoje adresy",
+    "addNewAddress": "Dodaj nowy adres",
+    "shippingMethod": "Sposób dostawy",
+    "orderSummary": "Podsumowanie zamówienia",
+    "shippingCost": "Koszt dostawy",
+    "navigation": {
+      "backToUpload": "Powrót do przesyłania",
+      "continueToPayment": "Kontynuuj do płatności"
+    }
+  },
+  "payment": {
+    "title": "Płatność i dane do faktury",
+    "subtitle": "Wybierz sposób płatności i podaj dane do faktury",
+    "paymentMethod": "Sposób płatności",
+    "invoiceDetails": "Dane do faktury",
+    "invoiceType": {
+      "individual": "Osoba fizyczna",
+      "company": "Firma"
+    },
+    "navigation": {
+      "backToShipment": "Powrót do dostawy",
+      "continueToSummary": "Kontynuuj do podsumowania"
+    }
+  },
+  "summary": {
+    "title": "Podsumowanie zamówienia",
+    "subtitle": "Sprawdź szczegóły zamówienia przed złożeniem",
+    "orderItems": "Produkty w zamówieniu",
+    "shippingInformation": "Informacje o dostawie",
+    "paymentAndInvoice": "Płatność i faktura",
+    "orderTotal": "Suma zamówienia",
+    "subtotal": "Suma częściowa",
+    "shipping": "Dostawa",
+    "tax": "Podatek (VAT 23%)",
+    "total": "Razem",
+    "allPricesIncludeVAT": "Wszystkie ceny zawierają VAT",
+    "placeOrder": "Złóż zamówienie",
+    "placingOrder": "Składanie zamówienia...",
+    "navigation": {
+      "backToPayment": "Powrót do płatności"
+    }
+  }
+}

@@ -3,6 +3,7 @@
 import { MainLayout } from '@/components/layout'
 import { CheckCircle, Download, Mail, ArrowRight, Calendar, MapPin, CreditCard } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useParams } from 'next/navigation'
 
 export default function OrderConfirmationPage() {
@@ -42,11 +43,12 @@ export default function OrderConfirmationPage() {
             <h3 className="font-medium text-gray-900 mb-4">Items Ordered</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-gray-100 rounded-md">
-                  <img 
+                <div className="w-16 h-16 bg-gray-100 rounded-md relative overflow-hidden">
+                  <Image 
                     src="/products/wizytowki-standardowe.webp" 
                     alt="Business Cards"
-                    className="w-full h-full object-cover rounded-md"
+                    fill
+                    className="object-cover rounded-md"
                   />
                 </div>
                 <div className="flex-1">
@@ -61,11 +63,12 @@ export default function OrderConfirmationPage() {
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-gray-100 rounded-md">
-                  <img 
+                <div className="w-16 h-16 bg-gray-100 rounded-md relative overflow-hidden">
+                  <Image 
                     src="/products/etykiety-do-aplikacji-recznej.webp" 
                     alt="Catalogs"
-                    className="w-full h-full object-cover rounded-md"
+                    fill
+                    className="object-cover rounded-md"
                   />
                 </div>
                 <div className="flex-1">

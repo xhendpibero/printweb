@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { ProductsDropdown } from './ProductsDropdown';
 import { ShoppingCart } from 'lucide-react';
 import { useCartStore } from '@/stores/cart-store';
@@ -11,7 +12,28 @@ export function MainHeader() {
   const nav = useTranslations('navigation');
   const params = useParams();
   const locale = params.locale as string;
-  const totalItems = useCartStore((s) => s.getTotalItems());
+  
+  // Use client-only state to prevent hydration mismatch
+  const [totalItems, setTotalItems] = useState<number>(0);
+  const [isClient, setIsClient] = useState(false);
+  
+  const getTotalItems = useCartStore((s) => s.getTotalItems);
+
+  useEffect(() => {
+    setIsClient(true);
+    setTotalItems(getTotalItems());
+  }, [getTotalItems]);
+
+  // Subscribe to cart changes
+  useEffect(() => {
+    if (!isClient) return;
+    
+    const unsubscribe = useCartStore.subscribe((state) => {
+      setTotalItems(state.getTotalItems());
+    });
+    
+    return unsubscribe;
+  }, [isClient]);
 
   return (
     <header className="bg-white shadow-sm">
@@ -56,7 +78,7 @@ export function MainHeader() {
               aria-label="Open cart"
             >
               <ShoppingCart className="w-5 h-5" />
-              <span className="text-sm font-medium">Cart{totalItems ? ` (${totalItems})` : ''}</span>
+              <span className="text-sm font-medium">Cart{isClient && totalItems > 0 ? ` (${totalItems})` : ''}</span>
             </Link>
 
             <div className="md:hidden">

@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "description": "Get in touch with our team. We're here to help with your printing needs and answer any questions you may have."
+  },
+  "info": {
+    "title": "Get in Touch",
+    "address": {
+      "title": "Address",
+      "street": "123 Printing Street",
+      "city": "Warsaw, 00-001",
+      "country": "Poland"
+    },
+    "phone": {
+      "title": "Phone",
+      "number": "+48 123 456 789"
+    },
+    "email": {
+      "title": "Email",
+      "address": "hello@drukarnia-graften.pl"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday: 8:00 AM - 6:00 PM",
+      "saturday": "Saturday: 9:00 AM - 2:00 PM",
+      "sunday": "Sunday: Closed"
+    }
+  },
+  "form": {
+    "title": "Send us a Message",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  }
+}

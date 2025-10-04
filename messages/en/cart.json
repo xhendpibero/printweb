@@ -1,0 +1,39 @@
+{
+  "title": "Shopping Cart",
+  "subtitle": "Review your items and proceed to checkout when ready.",
+  "continueShopping": "Continue Shopping",
+  "summary": "Summary",
+  "printingCostNet": "Printing cost (net)",
+  "deliveryCostNet": "Delivery cost (net)",
+  "netPrice": "Net price",
+  "grossPrice": "Gross price (VAT 23%)",
+  "uploadFile": "Upload file",
+  "finishLater": "Finish later",
+  "finishLaterHelp": "What is the \"Finish later\" option?",
+  "empty": {
+    "title": "Your cart is empty",
+    "description": "Add some products to get started",
+    "browseProducts": "Browse Products"
+  },
+  "item": {
+    "quantity": "Quantity",
+    "configuration": "Configuration",
+    "unitPrice": "Unit price",
+    "totalPrice": "Total price",
+    "filesUploaded": "Files uploaded",
+    "filesRequired": "Files required",
+    "actions": {
+      "duplicate": "Duplicate",
+      "edit": "Edit Configuration",
+      "addOrderName": "Add Order Name",
+      "remove": "Remove"
+    }
+  },
+  "discount": {
+    "placeholder": "Enter discount code",
+    "apply": "Apply",
+    "applied": "Discount applied",
+    "invalid": "Invalid discount code",
+    "samples": "Try: WELCOME10, FIRST20"
+  }
+}

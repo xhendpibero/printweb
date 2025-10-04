@@ -1,5 +1,4 @@
 import { useState, useCallback } from 'react'
-import type { FileUploadState } from '../types'
 import { validateUploadFile, areAllFilesUploaded } from '../utils'
 import { addToast } from '@/components/ui/Toast'
 
@@ -7,7 +6,7 @@ import { addToast } from '@/components/ui/Toast'
  * Hook for managing file uploads in checkout flow
  */
 export function useFileUpload(itemIds: string[]) {
-  const [uploadedFiles, setUploadedFiles] = useState<FileUploadState>({})
+  const [uploadedFiles, setUploadedFiles] = useState<Record<string, File[]>>({})
   const [isUploading, setIsUploading] = useState(false)
 
   const handleFileUpload = useCallback((itemId: string, files: FileList) => {
@@ -21,7 +20,7 @@ export function useFileUpload(itemIds: string[]) {
       if (validation.isValid) {
         validFiles.push(file)
       } else {
-        errors.push(`${file.name}: ${validation.error}`)
+        errors.push(`${file.name}: ${validation.errors.join(', ')}`)
       }
     })
 
@@ -73,7 +72,7 @@ export function useFileUpload(itemIds: string[]) {
     })
   }, [])
 
-  const allFilesUploaded = areAllFilesUploaded(uploadedFiles, itemIds)
+  const allFilesUploaded = areAllFilesUploaded(itemIds, uploadedFiles)
 
   return {
     uploadedFiles,

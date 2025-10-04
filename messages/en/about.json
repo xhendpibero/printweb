@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "About Drukarnia Graften",
+    "description": "We are a modern printing house dedicated to providing high-quality printing services with innovative technology and exceptional customer service."
+  },
+  "story": {
+    "title": "Our Story",
+    "paragraph1": "Founded in 2025, Drukarnia Graften emerged from a vision to revolutionize the printing industry by combining traditional craftsmanship with cutting-edge technology.",
+    "paragraph2": "Today, we serve thousands of customers across Poland, delivering premium printing solutions that exceed expectations. Our commitment to quality, speed, and innovation drives everything we do."
+  },
+  "values": {
+    "title": "Our Values",
+    "quality": {
+      "title": "Premium Quality",
+      "description": "We use only the finest materials and latest printing technologies to ensure every product meets our high standards."
+    },
+    "speed": {
+      "title": "Fast Delivery",
+      "description": "Our efficient processes and logistics network ensure your orders are completed and delivered quickly."
+    },
+    "service": {
+      "title": "Excellent Service",
+      "description": "Our dedicated team provides personalized support and guidance throughout your printing journey."
+    }
+  },
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "description": "Let us help you bring your ideas to life with our professional printing services.",
+    "contact": "Contact Us",
+    "products": "View Products"
+  }
+}

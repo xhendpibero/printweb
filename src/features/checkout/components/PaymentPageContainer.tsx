@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { useParams } from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import type { PaymentMethod, InvoiceFormData, PaymentFormData } from '../types'
 import { PAYMENT_METHODS } from '@/shared/constants'
@@ -21,6 +21,7 @@ const AVAILABLE_PAYMENT_METHODS: PaymentMethod[] = PAYMENT_METHODS.map(method =>
 
 export function PaymentPageContainer() {
   const params = useParams()
+  const router = useRouter()
   const locale = params.locale as string
   const calculations = useCartCalculations()
 
@@ -68,8 +69,14 @@ export function PaymentPageContainer() {
       return
     }
 
-    // Process payment
+    // Clear any existing errors
+    setErrors({})
+    
+    // Process payment data (could save to store/context here)
     console.log('Processing payment:', formData)
+    
+    // Navigate to summary page
+    router.push(`/${locale}/order/summary`)
   }
 
   const canContinue = formData.paymentMethodId && formData.agreeToTerms

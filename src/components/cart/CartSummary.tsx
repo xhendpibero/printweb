@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
+import { useCartTranslations } from '@/shared/hooks'
 import type { Currency } from '@/shared/types'
 import { formatMoney } from '@/shared/utils'
 import { useCartStore } from '@/stores/cart-store'
@@ -12,6 +13,7 @@ import { DiscountCode } from './DiscountCode'
 export function CartSummary() {
   const params = useParams()
   const locale = params.locale as string
+  const t = useCartTranslations()
   const currency = useCartStore((s) => s.currency) as Currency
   const calculations = useCartCalculations()
 
@@ -19,7 +21,7 @@ export function CartSummary() {
     <aside className="w-full md:w-80 lg:w-96 md:sticky md:top-4">
       <div className="rounded-xl border bg-white p-5 shadow-sm">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-semibold">Summary</h2>
+          <h2 className="text-xl font-semibold">{t('summary')}</h2>
           <CurrencyToggle />
         </div>
 
@@ -35,19 +37,19 @@ export function CartSummary() {
 
         <div className="space-y-3 text-sm">
           <div className="flex items-center justify-between">
-            <span className="text-gray-600">Printing cost (net)</span>
+            <span className="text-gray-600">{t('printingCostNet')}</span>
             <span className="font-medium">{formatMoney(calculations.printingNet, currency)}</span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-gray-600">Delivery cost (net)</span>
+            <span className="text-gray-600">{t('deliveryCostNet')}</span>
             <span className="font-medium">{formatMoney(calculations.deliveryNet, currency)}</span>
           </div>
           <div className="pt-2 border-t flex items-center justify-between text-base">
-            <span className="text-gray-800">Net price</span>
+            <span className="text-gray-800">{t('netPrice')}</span>
             <span className="font-semibold">{formatMoney(calculations.totalNet, currency)}</span>
           </div>
           <div className="flex items-center justify-between text-base">
-            <span className="text-gray-800">Gross price (VAT 23%)</span>
+            <span className="text-gray-800">{t('grossPrice')}</span>
             <span className="font-semibold">{formatMoney(calculations.totalGross, currency)}</span>
           </div>
         </div>
@@ -57,17 +59,17 @@ export function CartSummary() {
             href={`/${locale}/order/upload`}
             className="block text-center w-full rounded-full bg-indigo-600 text-white py-3 font-medium hover:bg-indigo-700"
           >
-            Upload file
+            {t('uploadFile')}
           </Link>
           <Link
             href={`/${locale}/order/summary`}
             className="block text-center w-full rounded-full border border-gray-300 text-gray-800 py-3 font-medium hover:bg-gray-50"
           >
-            Finish later
+            {t('finishLater')}
           </Link>
           <div className="text-center">
             <button className="text-xs text-gray-500 hover:text-gray-700 underline">
-              What is the &ldquo;Finish later&rdquo; option?
+              {t('finishLaterHelp')}
             </button>
           </div>
         </div>

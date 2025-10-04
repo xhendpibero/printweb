@@ -1,0 +1,39 @@
+{
+  "title": "Koszyk",
+  "subtitle": "Sprawdź swoje produkty i przejdź do finalizacji zamówienia.",
+  "continueShopping": "Kontynuuj zakupy",
+  "summary": "Podsumowanie",
+  "printingCostNet": "Koszt druku (netto)",
+  "deliveryCostNet": "Koszt dostawy (netto)",
+  "netPrice": "Cena netto",
+  "grossPrice": "Cena brutto (VAT 23%)",
+  "uploadFile": "Prześlij plik",
+  "finishLater": "Dokończ później",
+  "finishLaterHelp": "Co to jest opcja \"Dokończ później\"?",
+  "empty": {
+    "title": "Twój koszyk jest pusty",
+    "description": "Dodaj produkty, aby rozpocząć",
+    "browseProducts": "Przeglądaj produkty"
+  },
+  "item": {
+    "quantity": "Ilość",
+    "configuration": "Konfiguracja",
+    "unitPrice": "Cena jednostkowa",
+    "totalPrice": "Cena całkowita",
+    "filesUploaded": "Pliki przesłane",
+    "filesRequired": "Wymagane pliki",
+    "actions": {
+      "duplicate": "Duplikuj",
+      "edit": "Edytuj konfigurację",
+      "addOrderName": "Dodaj nazwę zamówienia",
+      "remove": "Usuń"
+    }
+  },
+  "discount": {
+    "placeholder": "Wprowadź kod rabatowy",
+    "apply": "Zastosuj",
+    "applied": "Rabat zastosowany",
+    "invalid": "Nieprawidłowy kod rabatowy",
+    "samples": "Spróbuj: WELCOME10, FIRST20"
+  }
+}

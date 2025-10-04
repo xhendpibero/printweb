@@ -1,0 +1,30 @@
+{
+  "notFound": {
+    "title": "Product not found",
+    "description": "The product you're looking for doesn't exist."
+  },
+  "configuration": {
+    "format": "Format",
+    "paper": "Paper",
+    "colors": "Colors",
+    "finishings": "Surface Finishing",
+    "projectPreparation": "Project Preparation",
+    "quantity": "Quantity",
+    "addToCart": "Add to Cart",
+    "copyLink": "Copy Configuration Link",
+    "linkCopied": "Configuration link copied to clipboard"
+  },
+  "pricing": {
+    "unitPrice": "Unit price",
+    "totalPrice": "Total price",
+    "deliveryEstimate": "Estimated delivery",
+    "orderDeadline": "Order deadline"
+  },
+  "validation": {
+    "selectFormat": "Please select a format",
+    "selectPaper": "Please select paper type",
+    "selectColors": "Please select color options",
+    "minQuantity": "Quantity must be at least 1",
+    "maxQuantity": "Maximum quantity is 10,000"
+  }
+}

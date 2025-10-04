@@ -1,21 +1,43 @@
 import type { BaseEntity, Currency, Address } from './common.types'
 
-export type OrderStatus = 'pending' | 'confirmed' | 'processing' | 'shipped' | 'delivered' | 'cancelled'
-export type PaymentStatus = 'pending' | 'completed' | 'failed' | 'refunded'
+export type OrderStatus = 
+  | 'draft' 
+  | 'pending' 
+  | 'confirmed' 
+  | 'in_production' 
+  | 'shipped' 
+  | 'delivered' 
+  | 'cancelled'
+
+export type PaymentStatus = 
+  | 'pending' 
+  | 'paid' 
+  | 'failed' 
+  | 'refunded' 
+  | 'partial'
 
 export interface Order extends BaseEntity {
   orderNumber: string
   userId?: string
   status: OrderStatus
-  items: OrderItem[]
-  subtotal: number
-  shippingCost: number
-  taxAmount: number
-  totalAmount: number
-  currency: Currency
-  shippingAddress: Address
-  billingAddress: Address
   paymentStatus: PaymentStatus
+  grossTotal: number
+  netTotal: number
+  currency: Currency
+  discountPercent?: number
+  itemsCount: number
+  purchaserName?: string
+  purchaserEmail?: string
+  shippingAddress?: Address
+  billingAddress?: Address
+  notes?: string
+  estimatedDelivery?: string
+  shippingMethod?: string
+  items?: OrderItem[]
+  subtotal?: number
+  shippingCost?: number
+  taxAmount?: number
+  totalAmount?: number
   paymentMethod?: string
 }
 

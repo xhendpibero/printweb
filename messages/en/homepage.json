@@ -1,0 +1,23 @@
+{
+  "title": "Professional Online Printing House",
+  "subtitle": "High-quality printing of business cards, flyers, posters and other promotional materials",
+  "hero": {
+    "heading": "Welcome to Drukarnia Graften",
+    "description": "Professional printing services with modern configurators and competitive prices. Order online and receive your materials quickly and reliably.",
+    "cta": "Start Configuring"
+  },
+  "features": {
+    "quality": {
+      "title": "Premium Quality",
+      "description": "We use only the highest quality materials and modern printing technologies"
+    },
+    "speed": {
+      "title": "Fast Delivery",
+      "description": "Express processing and reliable delivery throughout Poland"
+    },
+    "configurator": {
+      "title": "Easy Configuration",
+      "description": "Intuitive online configurators for all types of print materials"
+    }
+  }
+}

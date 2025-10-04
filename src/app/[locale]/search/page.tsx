@@ -1,5 +1,6 @@
 // import { useTranslations } from 'next-intl';
 import { MainLayout } from '@/components/layout';
+import Image from 'next/image';
 
 interface SearchPageProps {
   params: Promise<{ locale: string }>;
@@ -132,8 +133,13 @@ export default async function SearchPage({ params, searchParams }: SearchPagePro
                       { id: 14, name: 'Podkładka na Biurko', slug: 'podkladka-na-biurko', price: '€12.99', description: 'Desk pads for office use' }
                     ].map((product) => (
                       <div key={product.id} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                        <div className="aspect-square bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                          <img src={`/products/${product.slug}.webp`} alt={product.name} className="object-cover w-full h-full rounded-lg" />
+                        <div className="aspect-square bg-gray-200 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+                          <Image 
+                            src={`/products/${product.slug}.webp`} 
+                            alt={product.name} 
+                            fill
+                            className="object-cover rounded-lg" 
+                          />
                         </div>
                         <h3 className="font-medium text-gray-900 mb-2">{product.name}</h3>
                         <p className="text-sm text-gray-600 mb-3">{product.description}</p>

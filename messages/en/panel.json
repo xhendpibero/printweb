@@ -1,0 +1,167 @@
+{
+  "navigation": {
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "invoices": "Invoices",
+    "discounts": "Discounts & Promotions",
+    "cashback": "CashBack",
+    "addresses": "Addresses",
+    "organization": "Organization",
+    "messages": "Messages",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of your account activity",
+    "stats": {
+      "totalOrders": "Total Orders",
+      "pendingOrders": "Pending Orders",
+      "totalSpent": "Total Spent",
+      "activeDiscounts": "Active Discounts",
+      "unreadMessages": "Unread Messages"
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "viewAll": "View All Orders",
+      "empty": "No recent orders"
+    }
+  },
+  "orders": {
+    "title": "Orders",
+    "subtitle": "Manage your orders and track their progress",
+    "filters": {
+      "search": "Search orders...",
+      "dateFrom": "From",
+      "dateTo": "To",
+      "status": "Status",
+      "paymentStatus": "Payment Status",
+      "clearFilters": "Clear Filters"
+    },
+    "status": {
+      "draft": "Draft",
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "inProduction": "In Production",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "payment": {
+      "pending": "Pending",
+      "paid": "Paid",
+      "failed": "Failed",
+      "refunded": "Refunded",
+      "partial": "Partial"
+    },
+    "actions": {
+      "viewDetails": "View Details",
+      "cancel": "Cancel Order",
+      "reorder": "Order Again",
+      "downloadInvoice": "Download Invoice"
+    },
+    "empty": "No orders found",
+    "loading": "Loading orders..."
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account preferences",
+    "tabs": {
+      "account": "Account Details",
+      "password": "Change Password",
+      "transfer": "Transfer Details",
+      "marketing": "Marketing Consent",
+      "ftp": "FTP Server"
+    },
+    "account": {
+      "title": "Account Details",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "language": "Language",
+      "currency": "Preferred Currency",
+      "timezone": "Timezone",
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "saved": "Settings saved successfully"
+    },
+    "password": {
+      "title": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "requirements": "Password must be at least 8 characters long",
+      "change": "Change Password",
+      "changing": "Changing...",
+      "changed": "Password changed successfully"
+    },
+    "notifications": {
+      "title": "Notification Preferences",
+      "email": "Email Notifications",
+      "sms": "SMS Notifications",
+      "push": "Push Notifications",
+      "orderUpdates": "Order Updates",
+      "promotions": "Promotions & Offers",
+      "newsletter": "Newsletter"
+    }
+  },
+  "organization": {
+    "title": "Organization Users",
+    "subtitle": "Manage users in your organization",
+    "addUser": "Add User",
+    "users": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "actions": "Actions"
+    },
+    "roles": {
+      "admin": "Admin",
+      "adminDesc": "Full access to all features",
+      "manager": "Manager",
+      "managerDesc": "Manage orders and users",
+      "member": "Member",
+      "memberDesc": "View orders and place new ones"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "resetPassword": "Reset Password"
+    },
+    "modal": {
+      "addTitle": "Add New User",
+      "editTitle": "Edit User",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "role": "Role",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving..."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try Again",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "search": "Search...",
+    "filter": "Filter",
+    "reset": "Reset",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "of",
+    "items": "items",
+    "noResults": "No results found",
+    "selectAll": "Select All",
+    "actions": "Actions"
+  }
+}

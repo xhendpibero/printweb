@@ -1,0 +1,30 @@
+{
+  "notFound": {
+    "title": "Produkt nie znaleziony",
+    "description": "Produkt, którego szukasz, nie istnieje."
+  },
+  "configuration": {
+    "format": "Format",
+    "paper": "Papier",
+    "colors": "Kolory",
+    "finishings": "Wykończenie powierzchni",
+    "projectPreparation": "Przygotowanie projektu",
+    "quantity": "Ilość",
+    "addToCart": "Dodaj do koszyka",
+    "copyLink": "Kopiuj link konfiguracji",
+    "linkCopied": "Link konfiguracji skopiowany do schowka"
+  },
+  "pricing": {
+    "unitPrice": "Cena jednostkowa",
+    "totalPrice": "Cena całkowita",
+    "deliveryEstimate": "Szacowana dostawa",
+    "orderDeadline": "Termin zamówienia"
+  },
+  "validation": {
+    "selectFormat": "Proszę wybrać format",
+    "selectPaper": "Proszę wybrać typ papieru",
+    "selectColors": "Proszę wybrać opcje kolorów",
+    "minQuantity": "Ilość musi wynosić co najmniej 1",
+    "maxQuantity": "Maksymalna ilość to 10 000"
+  }
+}
