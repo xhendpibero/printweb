@@ -23,6 +23,7 @@ export interface User extends BaseEntity {
   email: string
   firstName?: string
   lastName?: string
+  avatar?: string
   role: 'customer' | 'admin' | 'editor' | 'production'
 }
 

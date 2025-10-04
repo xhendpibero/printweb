@@ -27,33 +27,190 @@ export interface OrgUser extends BaseEntity {
 export interface Invoice extends BaseEntity {
   invoiceNumber: string
   orderId: string
+  orderNumber?: string
   issueDate: string
-  dueDate: string
+  dueDate?: string
   paidDate?: string
-  status: 'draft' | 'sent' | 'paid' | 'overdue' | 'cancelled'
-  grossAmount: number
-  netAmount: number
+  status: 'paid' | 'unpaid' | 'overdue' | 'canceled'
+  grossTotal: number
+  netTotal: number
   vatAmount: number
   currency: Currency
   downloadUrl?: string
+  xmlUrl?: string
+}
+
+export interface InvoiceFilters {
+  dateFrom?: string
+  dateTo?: string
+  period?: 'any' | 'last30' | 'thisMonth' | 'lastMonth' | 'custom'
+  status?: Invoice['status'][]
+  search?: string
+  page?: number
+  pageSize?: number
+}
+
+export interface PeriodDownloadRequest {
+  month: number // 1-12
+  year: number
+}
+
+export interface EInvoiceConsent {
+  enabled: boolean
+  updatedAt: string
+}
+
+// Address types
+export type AddressType = 'shipping' | 'invoice'
+export type DeliveryMethod = 'courier' | 'inpost' | 'dpd_pickup'
+
+export interface UserAddress extends BaseEntity {
+  type: AddressType
+  name: string // address label
+  firstName: string
+  lastName: string
+  companyName?: string
+  taxId?: string
+  country: string
+  street: string
+  buildingNumber: string
+  apartmentNumber?: string
+  postalCode: string
+  city: string
+  phoneCountryCode?: string
+  phoneNumber?: string
+  email?: string
+  isDefault?: boolean
+  deliveryMethod?: DeliveryMethod // shipping only
+}
+
+export interface AddressFilters {
+  type?: AddressType
+  search?: string
+  page?: number
+  pageSize?: number
+}
+
+export interface CreateAddressPayload {
+  type: AddressType
+  name: string
+  firstName: string
+  lastName: string
+  companyName?: string
+  taxId?: string
+  country: string
+  street: string
+  buildingNumber: string
+  apartmentNumber?: string
+  postalCode: string
+  city: string
+  phoneCountryCode?: string
+  phoneNumber?: string
+  email?: string
+  deliveryMethod?: DeliveryMethod
+}
+
+export interface UpdateAddressPayload extends Partial<CreateAddressPayload> {
+  id: string
+}
+
+// Discount and Promotion types
+export interface DiscountProgram {
+  programId: string
+  name: string
+  currentDiscountPct: number
+  nextTier?: {
+    name: string
+    threshold: number
+    discountPct: number
+  }
+}
+
+export interface Promotion {
+  id: string
+  name: string
+  description: string
+  startsAt: string
+  endsAt: string
+  status: 'active' | 'upcoming' | 'expired'
+  conditions?: string[]
+}
+
+export interface CouponRedeemRequest {
+  code: string
+}
+
+export interface CouponRedeemResponse {
+  accepted: boolean
+  message: string
+  discountPct?: number
+  promotionId?: string
 }
 
 // Message types
 export interface Message extends BaseEntity {
+  createdAt: string
+  updatedAt: string
   subject: string
   content: string
   isRead: boolean
   priority: 'low' | 'normal' | 'high'
-  category: 'order' | 'billing' | 'support' | 'promotion'
-  attachments?: MessageAttachment[]
+  sender: 'system' | 'support' | 'user'
+  threadId: string
+  orderId?: string
 }
 
-export interface MessageAttachment {
-  id: string
-  name: string
-  size: number
-  type: string
-  downloadUrl: string
+export interface MessageThread extends BaseEntity {
+  createdAt: string
+  updatedAt: string
+  subject: string
+  lastMessagePreview: string
+  lastMessageAt: string
+  unread: boolean
+  messages: Message[]
+}
+
+export interface MessagesFilters {
+  search?: string
+  page?: number
+  pageSize?: number
+  unreadOnly?: boolean
+}
+
+export interface SendMessagePayload {
+  threadId?: string
+  subject?: string
+  body: string
+}
+
+// Cashback types
+export interface CashbackBalance {
+  currency: Currency
+  available: number
+  blocked: number
+  updatedAt: string
+}
+
+export interface CashbackHistoryItem extends BaseEntity {
+  createdAt: string
+  updatedAt: string
+  type: 'earn' | 'redeem' | 'adjust' | 'block' | 'unblock'
+  amount: number
+  currency: Currency
+  note?: string
+  orderId?: string
+}
+
+export interface RedeemCashbackRequest {
+  amount: number
+  currency: Currency
+  cartId?: string
+}
+
+export interface RedeemCashbackResponse {
+  success: boolean
+  appliedToCartId?: string
+  message?: string
 }
 
 // Settings types

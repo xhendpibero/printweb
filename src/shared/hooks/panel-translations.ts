@@ -13,6 +13,26 @@ export function useOrdersTranslations() {
   return useTranslations('panel.orders')
 }
 
+export function useInvoicesTranslations() {
+  return useTranslations('panel.invoices')
+}
+
+export function useAddressesTranslations() {
+  return useTranslations('panel.addresses')
+}
+
+export function useDiscountsTranslations() {
+  return useTranslations('panel.discounts')
+}
+
+export function useMessagesTranslations() {
+  return useTranslations('panel.messages')
+}
+
+export function useCashbackTranslations() {
+  return useTranslations('panel.cashback')
+}
+
 export function useSettingsTranslations() {
   return useTranslations('panel.settings')
 }
